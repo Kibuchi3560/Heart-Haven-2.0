@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff Admin Portal | Heart Haven</title>
+  <meta name="description" content="Staff admin portal for Heart Haven: manage needs, pledges, volunteers and news (demo only).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,0" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""><span class="brand-text"><strong>Heart Haven</strong><small>CHILDREN'S HOME</small></span></a>
+      <div class="env"><span class="material-symbols-outlined" aria-hidden="true">science</span> <span>Simulated records &amp; care log environment.</span></div>
+      <nav class="side-nav" aria-label="Admin">
+        <a href="admin.html" aria-current="page"><span class="material-symbols-outlined" aria-hidden="true">dashboard</span> Overview</a>
+        <a href="index.html"><span class="material-symbols-outlined" aria-hidden="true">public</span> Public Portal</a>
+        <a href="needs.html"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span> Needs Registry</a>
+        <a href="volunteer.html"><span class="material-symbols-outlined" aria-hidden="true">groups</span> Volunteer Rosters</a>
+      </nav>
+      <div class="side-user"><span class="avatar">SD</span><span><b>Staff Duty Desk</b>Ref #202617998</span></div>
+    </aside>
+    <div class="admin-main" id="main">
+      <div class="admin-top"><span><span class="material-symbols-outlined" aria-hidden="true">lock</span> Secure personnel workspace</span><a class="btn btn-primary btn-sm" href="support.html">Pledge Registry</a></div>
+      <div class="demo-banner"><span class="material-symbols-outlined" aria-hidden="true">info</span><span><b>Internal demonstration mode</b>Front-end demo check only (not production security). Data persisted via browser localStorage and static JSON schema.</span><span class="pill">Care log sync active</span></div>
+      <div class="admin-title">
+        <div><small>Duty console &bull; Heart Haven child sanctuary &nbsp; v2.4-demo</small><h1>Heart Haven Staff Admin Portal</h1><p>Manage home needs, monitor donor pledges, oversee volunteer sign-ups, and publish updates.</p></div>
+        <div class="btns"><button class="btn btn-soft btn-sm" type="button"><span class="material-symbols-outlined" aria-hidden="true">download</span> Export Audit Log</button><button class="btn btn-primary btn-sm" type="button"><span class="material-symbols-outlined" aria-hidden="true">add_circle</span> Add New Need</button></div>
+      </div>
+      <div class="admin-stats">
+        <div class="a-stat"><div><small>Active requests</small><strong>12 Active Needs</strong><span class="sub warn">3 high priority</span></div><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span></span></div>
+        <div class="a-stat"><div><small>Campaign balance</small><strong>$7,840 Raised</strong><span class="sub up">+18.4% this month</span></div><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span></span></div>
+        <div class="a-stat"><div><small>Community support</small><strong>24 New Signups</strong><span class="sub ">Rosters awaiting review</span></div><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">person_add</span></span></div>
+        <div class="a-stat"><div><small>Sanctuary stories</small><strong>3 Pending Posts</strong><span class="sub ">Awaiting guardian approval</span></div><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">auto_stories</span></span></div>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Admin sections">
+        <button class="tab" role="tab" aria-selected="true" type="button"><span class="material-symbols-outlined" aria-hidden="true">list</span> Needs Management</button>
+        <button class="tab" role="tab" aria-selected="false" type="button"><span class="material-symbols-outlined" aria-hidden="true">sell</span> Pledges &amp; Donors</button>
+        <button class="tab" role="tab" aria-selected="false" type="button"><span class="material-symbols-outlined" aria-hidden="true">groups</span> Volunteer Applications</button>
+        <button class="tab" role="tab" aria-selected="false" type="button"><span class="material-symbols-outlined" aria-hidden="true">post_add</span> Post News Update</button>
+      </div>
+      <div class="admin-grid">
+        <div class="stack">
+          <div class="table-card">
+            <div class="toolbar"><input type="search" placeholder="Search registry items by keyword or SKU..." aria-label="Search needs"><select aria-label="Filter by category"><option>All categories</option><option>Education</option><option>Healthcare</option><option>Nutrition</option></select><button class="btn btn-primary btn-sm" type="button"><span class="material-symbols-outlined" aria-hidden="true">add</span> Add Need</button></div>
+            <p style="font:800 .8rem var(--font-head);color:var(--teal);margin:0 0 .6rem">Needs Inventory <span class="pill pill-light" style="background:var(--teal-soft)">3 listed</span></p>
+            <div class="table-wrap"><table class="data">
+              <thead><tr><th scope="col">Item details</th><th scope="col">Category</th><th scope="col">Financial target</th><th scope="col">Progress</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+              <tbody>
+              <tr><td><div class="item"><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">menu_book</span></span><span><b>High School Math &amp; Science Textbooks</b><small>Classroom cohort 2026/A</small></span></div></td><td><span class="cat">Education</span></td><td>$600</td><td><div class="mini-bar"><div class="l"><span>$450</span><b>75%</b></div><div class="progress"><span style="width:75%"></span></div></div></td><td><span class="status ">Active</span></td><td><div class="row-actions"><span class="material-symbols-outlined" aria-hidden="true">edit</span><span class="material-symbols-outlined" aria-hidden="true">task_alt</span><span class="material-symbols-outlined" aria-hidden="true">delete</span></div></td></tr>
+              <tr><td><div class="item"><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">vaccines</span></span><span><b>Pediatric Flu Vaccines</b><small>Fall wellness clinic round</small></span></div></td><td><span class="cat">Healthcare</span></td><td>$320</td><td><div class="mini-bar"><div class="l"><span>$320</span><b>100%</b></div><div class="progress done"><span style="width:100%"></span></div></div></td><td><span class="status ok">Funded</span></td><td><div class="row-actions"><span class="material-symbols-outlined" aria-hidden="true">edit</span><span class="material-symbols-outlined" aria-hidden="true">task_alt</span><span class="material-symbols-outlined" aria-hidden="true">delete</span></div></td></tr>
+              <tr><td><div class="item"><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">yard</span></span><span><b>Organic Vegetable Seeds &amp; Drip Irrigation</b><small>Children's sensory kitchen garden</small></span></div></td><td><span class="cat">Nutrition</span></td><td>$500</td><td><div class="mini-bar"><div class="l"><span>$280</span><b>56%</b></div><div class="progress"><span style="width:56%"></span></div></div></td><td><span class="status ">Active</span></td><td><div class="row-actions"><span class="material-symbols-outlined" aria-hidden="true">edit</span><span class="material-symbols-outlined" aria-hidden="true">task_alt</span><span class="material-symbols-outlined" aria-hidden="true">delete</span></div></td></tr>
+              </tbody>
+            </table></div>
+          </div>
+          <div class="admin-note"><span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span> Pledged items receive real-time verification before disbursement to dormitory cottages. <span style="margin-left:auto;font-weight:800;color:var(--teal)">Ref code: HH-ADMIN-LIVE</span></div>
+        </div>
+        <div class="side-cards">
+          <div class="activity"><header><div><h3>Live Activity</h3><small>Recent community pledges &amp; forms</small></div><span class="live-dot" title="Live"></span></header>
+            <div class="act-item"><span class="avatar">ER</span><div><div class="top"><b>Elena Rostova</b><span class="status good">Confirmed</span></div>Pledged $150 &bull; Math Textbooks<br>14m ago</div></div><div class="act-item"><span class="avatar">MK</span><div><div class="top"><b>Marcus Kane</b><span class="status warn">Reviewing</span></div>Volunteer &bull; Weekend Reading Tutor<br>1h ago</div></div><div class="act-item"><span class="avatar">SL</span><div><div class="top"><b>Dr. Sarah Lin</b><span class="status good">Fulfilled</span></div>Pledged $320 &bull; Flu Vaccines<br>3h ago</div></div><div class="act-item"><span class="avatar">DH</span><div><div class="top"><b>David Hayes</b><span class="status warn">Screening</span></div>Volunteer &bull; Kitchen Helper<br>5h ago</div></div>
+            <button class="btn btn-soft btn-sm btn-block" style="margin-top:.8rem" type="button">View Complete Inbound Roster</button>
+          </div>
+          <div class="dispatch"><small><span class="material-symbols-outlined" aria-hidden="true">campaign</span> Public notice dispatch</small><h3>Post Milestone Update</h3><p>Keep foster families, donors, and patrons informed of cottage accomplishments and emergency needs.</p><button class="btn btn-primary btn-sm" type="button"><span class="material-symbols-outlined" aria-hidden="true">edit_note</span> Compose Update Now</button></div>
+        </div>
+      </div>
+      <p class="admin-note"><span class="material-symbols-outlined" aria-hidden="true">construction</span> Stage 2 shows the layout only. The login, add/edit forms and live data are built in later stages.</p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

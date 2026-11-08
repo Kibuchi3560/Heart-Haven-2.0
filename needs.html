@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Current Needs | Heart Haven</title>
+  <meta name="description" content="Browse the current needs of Heart Haven Children's Home and sponsor one with a simulated pledge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,0" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="notice-bar"><strong>Learning Prototype:</strong> For educational demonstration only. Does not replace legal processes of a real children's home. Sample data used. Simulated payments.</div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""><span class="brand-text"><strong>Heart Haven</strong><small>CHILDREN'S HOME</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="needs.html" aria-current="page">Needs</a>
+        <a href="impact.html">Impact</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin Portal</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="support.html">Pledge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container page-head-grid">
+        <div>
+          <p class="eyebrow"><span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span> Direct child welfare stewardship</p>
+          <h1>Current Needs &amp; Sponsor Pledges</h1>
+          <p>Browse transparent, verified requirements for our children. Choose an essential need to sponsor directly or make a tailored open pledge with immediate local confirmation.</p>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat"><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">savings</span></span><span><small>Funded this quarter</small><strong>$4,950 / $6,500</strong></span></div>
+          <div class="mini-stat"><span class="ic"><span class="material-symbols-outlined" aria-hidden="true">diversity_1</span></span><span><small>Community backers</small><strong>142 registered micro-pledges</strong></span><a class="btn btn-soft btn-sm" href="support.html">Quick Open</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:.6rem">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filter needs by category">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All Needs (12)</button><button class="filter" type="button" data-filter="education" aria-pressed="false">Education (4)</button><button class="filter" type="button" data-filter="nutrition" aria-pressed="false">Nutrition &amp; Diet (3)</button><button class="filter" type="button" data-filter="healthcare" aria-pressed="false">Healthcare (3)</button><button class="filter" type="button" data-filter="clothing" aria-pressed="false">Clothing &amp; Bedding (2)</button>
+          <div class="spacer"><label class="toggle"><input type="checkbox" id="urgent-only"> Urgent only</label><span>Showing 6 essentials</span></div>
+        </div>
+        <div class="card-grid" id="needs-grid">
+          <article class="need-card" data-category="education" data-urgent="true">
+            <div class="media">
+              <img src="images/education.svg" alt="Illustration for Annual Secondary Tuition &amp; Exam Fees" loading="lazy">
+              <span class="pill  tag-l">Education</span>
+              <span class="pill pill-red tag-r">Urgent</span>
+            </div>
+            <div class="body">
+              <h3>Annual Secondary Tuition &amp; Exam Fees</h3>
+              <p>Covers national KCSE exam registration, course textbooks, uniforms, and boarding stipends for 6 secondary students.</p>
+              <div class="meta"><span>Goal: <b>$2,200</b></span><span><b>84%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Annual Secondary Tuition &amp; Exam Fees funding" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"><span style="width:84%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$1,850</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+          <article class="need-card" data-category="nutrition" data-urgent="true">
+            <div class="media">
+              <img src="images/nutrition.svg" alt="Illustration for Fresh Dairy &amp; Toddler Nutrition Packs" loading="lazy">
+              <span class="pill  tag-l">Nutrition</span>
+              <span class="pill pill-red tag-r">Urgent</span>
+            </div>
+            <div class="body">
+              <h3>Fresh Dairy &amp; Toddler Nutrition Packs</h3>
+              <p>Provides pasteurized milk, fortified oats, vitamins, and preventative formula for 14 nursery residents.</p>
+              <div class="meta"><span>Goal: <b>$600</b></span><span><b>70%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Fresh Dairy &amp; Toddler Nutrition Packs funding" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="width:70%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$420</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+          <article class="need-card" data-category="healthcare" data-urgent="true">
+            <div class="media">
+              <img src="images/health.svg" alt="Illustration for Specialized Pediatric Dental &amp; Vision Clinic" loading="lazy">
+              <span class="pill  tag-l">Healthcare</span>
+              <span class="pill pill-red tag-r">Urgent</span>
+            </div>
+            <div class="body">
+              <h3>Specialized Pediatric Dental &amp; Vision Clinic</h3>
+              <p>Comprehensive physical check-ups, dental screening, corrective eyewear, and routine clinical supplies.</p>
+              <div class="meta"><span>Goal: <b>$1,500</b></span><span><b>63%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Specialized Pediatric Dental &amp; Vision Clinic funding" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"><span style="width:63%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$950</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+          <article class="need-card" data-category="clothing" data-urgent="false">
+            <div class="media">
+              <img src="images/bedding.svg" alt="Illustration for Winter Warm Blankets &amp; Comforters (30 sets)" loading="lazy">
+              <span class="pill  tag-l">Shelter &amp; Bedding</span>
+              <span class="pill pill-yellow tag-r">Almost Funded</span>
+            </div>
+            <div class="body">
+              <h3>Winter Warm Blankets &amp; Comforters (30 sets)</h3>
+              <p>High-durability hypoallergenic bedding sets for every resident cottage, insulated during cold nights.</p>
+              <div class="meta"><span>Goal: <b>$800</b></span><span><b>97%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Winter Warm Blankets &amp; Comforters (30 sets) funding" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"><span style="width:97%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$780</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+          <article class="need-card" data-category="healthcare" data-urgent="false">
+            <div class="media">
+              <img src="images/mental.svg" alt="Illustration for Play Therapy &amp; Art Counseling Supplies" loading="lazy">
+              <span class="pill  tag-l">Mental Health</span>
+              <span class="pill pill-light tag-r">Ongoing Care</span>
+            </div>
+            <div class="body">
+              <h3>Play Therapy &amp; Art Counseling Supplies</h3>
+              <p>Restocks expressive art kits, non-toxic paints, and clinical therapeutic sets for our on-site counselors.</p>
+              <div class="meta"><span>Goal: <b>$500</b></span><span><b>62%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Play Therapy &amp; Art Counseling Supplies funding" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"><span style="width:62%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$310</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+          <article class="need-card" data-category="education" data-urgent="false">
+            <div class="media">
+              <img src="images/transport.svg" alt="Illustration for Bicycle Maintenance &amp; Transportation Van Fuel" loading="lazy">
+              <span class="pill  tag-l">Logistics &amp; School Transit</span>
+              <span class="pill pill-light tag-r">Core Routine</span>
+            </div>
+            <div class="body">
+              <h3>Bicycle Maintenance &amp; Transportation Van Fuel</h3>
+              <p>Ensures safe daily travel to day academies, emergency hospital transport, and cycle maintenance.</p>
+              <div class="meta"><span>Goal: <b>$900</b></span><span><b>71%</b> funded</span></div>
+              <div class="progress" role="progressbar" aria-label="Bicycle Maintenance &amp; Transportation Van Fuel funding" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100"><span style="width:71%"></span></div>
+              <div class="foot"><div><small>Collected</small><strong>$640</strong></div><a class="btn btn-primary btn-sm" href="support.html">Support this Need <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="pledge-box">
+          <header><div><h3>Your Local Device Pledges</h3><small>Simulated ledger recorded locally in your browser storage.</small></div><button class="reset" type="button"><span class="material-symbols-outlined" aria-hidden="true">restart_alt</span> Reset session data</button></header>
+          <div class="empty">No pledges made yet in this browser session. Select any need above to test the simulation.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""><span class="brand-text"><strong>Heart Haven</strong><small>CHILDREN'S HOME</small></span></a>
+          <p>Empowering orphaned and vulnerable children through loving residential foster care, accelerated learning, emotional nurturing, and transparent community stewardship.</p>
+          <span class="chip"><span class="material-symbols-outlined" aria-hidden="true">school</span> Academic Ref: Kibuchi Maina Project Write-up (202617998)</span>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="programmes.html">Our Programmes</a></li>
+            <li><a href="needs.html">Urgent Care Needs</a></li>
+            <li><a href="impact.html">Impact Metrics</a></li>
+            <li><a href="volunteer.html">Volunteer Network</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Compliance &amp; Contact</h4>
+          <p><strong>Notice:</strong> All M-Pesa donations, banking routes, and card gateways run in simulated sandboxes.</p>
+          <p><strong>Confidentiality:</strong> Names, identities, and photographs of minors are fully anonymized to protect child welfare rights.</p>
+          <a class="btn-link" href="contact.html">Contact Facilitation Desk <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Heart Haven Children's Home Prototype. Educational Demonstration Only.</span>
+        <span><a href="admin.html">Staff Gateway</a> &nbsp;|&nbsp; Simulated System Env.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
